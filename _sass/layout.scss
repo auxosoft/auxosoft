@@ -4,6 +4,41 @@
     left: 0;
     top: 0;
     display: flex;
+    z-index: 10;
+    padding: 15px;
+    .logo{
+        img{
+            width: 32px;
+            margin-right: 8px;
+        }
+        a{
+            color: #fff;
+            font-weight: 700;
+            user-select: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.site-nav{
+    margin-left: auto;
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            display: inline-block;
+            margin-left: 10px;
+            a{
+                color: #ffffff;
+                font-weight: 600;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
 .site-item{
@@ -99,6 +134,6 @@
         bottom: 0;
         right: 0;
         left: 0;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.6);
     }
 }
