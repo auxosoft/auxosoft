@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  </head>
+<html>
+
+  {% include head.html %}
+
   <body>
-    {{ content}}
+
+    {% include header.html %}
+
+
+    <main id="content">
+      <div class="site-wrap">
+
+        <div class="site-item">
+          <section>
+            <div class="home-overlay"></div>
+            <div class="section-content">
+              <div class="inner-content">
+                <h1>Launch your digital experiences</h1>
+                <p>A full service web designing company based in Kochi, Kerala which develop creative and captivating websites for your enterprises.</p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </main>
+
+    
+
+    {% include footer.html %}
+
   </body>
+
 </html>
